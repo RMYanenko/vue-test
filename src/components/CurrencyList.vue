@@ -22,40 +22,6 @@
         </tbody>
       </table>
     </div>
-    <hr />
-    <div>
-      <h3>КОНВЕРТЕР ВАЛЮТ</h3>
-      <form class="currency_form" action="">
-        <div class="input-wrap">
-          <label for="inner_currency">Міняю</label>
-          <select name="" id="currency_choice" class="currency_choice" v-model="choiceCurrency">
-            <option v-bind:key="currency" v-for="currency in currencies">
-              {{ currency.ccy }}
-            </option>
-          </select>
-          <input
-            v-bind:value="innerCurrency"
-            @input="innerCurrencyMetod"
-            class="currency_input"
-            type="number"
-            id="inner_currency"
-            name="inner_currency"
-            placeholder="0"
-          />
-        </div>
-        <div class="input-wrap">
-          <label for="outer_currency">Отримую</label>
-          <input
-            v-bind:value="outerCurrency"
-            class="currency_input"
-            type="text"
-            id="outer_currency"
-            name="outer_currency"
-            placeholder="0.00"
-          />
-        </div>
-      </form>
-    </div>
   </div>
 </template>
 
@@ -89,10 +55,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-}
 
 .currency-ccy {
   font-weight: 600;

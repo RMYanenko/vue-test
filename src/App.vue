@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/converter">Сonverter</router-link>
   </div>
   <router-view/>
 </template>
@@ -29,5 +29,9 @@
       color: #42b983;
     }
   }
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
 }
 </style>
